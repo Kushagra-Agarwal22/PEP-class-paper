@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+        <script>
+  function once(fn) {
+    let called = false;
+
+    return function () {
+      if (called) return;
+      called = true;
+      fn();
+    };
+  }
+
+  function greet() {
+    console.log("Hello");
+  }
+
+  const greetOnce = once(greet);
+
+  greetOnce(); 
+  greetOnce(); 
+  greetOnce(); 
+
+
+
+         
+  
+  
+
+  
+  
+  
+  
+  
+
+
+    </script>
+</body>
+</html>
